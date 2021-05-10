@@ -1,0 +1,55 @@
+// HEADER
+
+// Nav-bar
+// --logo
+.nav-bar {
+    @include flexbox;
+    justify-content: space-between;
+
+    .logo {
+        width: 120px;
+    }
+    
+}
+
+.menu-link {
+        list-style-type: none;
+        
+        li {
+            display: inline-block;
+            font-size: 12px;
+            margin-left: 25px;
+            font-weight: 500;
+
+            i {
+                font-size: 10px;
+                padding-left: 5px;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+.search {
+
+    input {
+        width: 120px;
+        padding:9px 15px;
+        border: none;
+        margin-right: -5px;
+        border-radius: 3px 0 0 3px;
+        font-size: 12px;
+    }
+
+    label {
+        padding-left: -3px;
+        padding: 6px;
+        padding-right: 15px;
+        background-color: white;
+        color:  $primary-brand-color;
+        border-radius: 0 3px 3px 0;
+    }
+}

@@ -7,3 +7,59 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+  width: 70%;
+  margin: auto;
+  height: 100px;
+  background-color: blue;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar .logo {
+  width: 120px;
+}
+
+.menu-link {
+  list-style-type: none;
+}
+.menu-link li {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 25px;
+  font-weight: 500;
+}
+.menu-link li i {
+  font-size: 10px;
+  padding-left: 5px;
+}
+.menu-link li a {
+  color: white;
+  text-decoration: none;
+}
+
+.search input {
+  width: 120px;
+  padding: 9px 15px;
+  border: none;
+  margin-right: -5px;
+  border-radius: 3px 0 0 3px;
+  font-size: 12px;
+}
+.search label {
+  padding-left: -3px;
+  padding: 6px;
+  padding-right: 15px;
+  background-color: white;
+  color: #27ab94;
+  border-radius: 0 3px 3px 0;
+}

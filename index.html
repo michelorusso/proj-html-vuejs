@@ -25,6 +25,65 @@
     
     <div id="root">
 
+        <!-- HEADER -->
+        <header>
+            <div class="wrapper">
+
+                <!-- Nav-bar -->
+                <section class="nav-bar">
+
+                    <!-- logo -->
+                    <div class="logo">
+                        <img src="img/light-logo.png" alt="logo">
+                    </div>
+                    <!-- end logo -->
+
+                    <!-- nav-link -->
+                    <div>
+                       
+                        <!-- menu-link -->
+                        <ul class="menu-link">
+                            <li v-for=" link in navLink">
+                                <a href="#">{{ link.name }}<i class="fas fa-chevron-down"></i></a>
+                            </li>
+                        </ul>
+                        <!-- end menu-link -->
+
+                    </div>
+                    <!-- end nav-link -->
+
+                    <!-- search -->
+                    <div class="search">
+
+                        <i class="fas fa-shopping-cart"></i>
+                        
+                        <i class="far fa-user-circle"></i>
+
+                        <input id="search" type="text" placeholder="Search...">
+                        <label for="search"><i class="fas fa-search"></i></label>
+
+                    </div>
+                    <!-- end search -->
+
+                </section>
+                <!-- End Nav-bar -->
+
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- MAIN -->
+        <main>
+
+        </main>
+        <!-- END MAIN -->
+
+        <!-- FOOTER -->
+        <footer>
+
+        </footer>
+        <!-- END FOOTER -->
+
     </div>
 
     <!-- JS -->
