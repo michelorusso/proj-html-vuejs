@@ -48,6 +48,7 @@ header {
   background-color: #1f2154;
   color: #f6f3f6;
   height: 550px;
+  margin-bottom: 89px;
 }
 
 .nav-bar {
@@ -140,14 +141,19 @@ input {
 }
 
 .jumbotron {
-  height: 332px;
-  overflow-y: hidden;
+  background-image: url(../img/background-pattern-grid-line.png);
+  background-size: 310px;
+  background-position: center;
+  margin-top: 15px;
+  height: 345px;
+  overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 .jumbotron .youtube {
   position: absolute;
   left: 50%;
-  bottom: 5px;
+  bottom: 0px;
   transform: translateX(-50%);
   width: 550px;
   padding: 15px;
@@ -166,12 +172,110 @@ input {
 .jumbotron .left {
   width: 300px;
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 140px;
 }
 .jumbotron .right {
-  width: 150px;
+  width: 160px;
   position: absolute;
-  bottom: -110px;
-  right: 250px;
+  bottom: -114px;
+  right: 240px;
+  overflow: hidden;
+}
+
+.results {
+  background-image: url(../img/background-pattern-grid-line.png);
+  background-size: 310px;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.results h3 {
+  padding-top: 161px;
+  width: 550px;
+  margin: auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+.results p {
+  font-weight: 700;
+  padding-top: 25px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.results span {
+  font-size: 11px;
+  color: gray;
+}
+.results .number-results {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.results .number-results .result {
+  padding: 20px 0;
+  width: 25%;
+  color: #27ab94;
+  font-size: 30px;
+  font-weight: 800;
+}
+.results .number-results .result span {
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+  display: block;
+  text-transform: uppercase;
+}
+
+.circle span {
+  position: absolute;
+}
+.circle .one {
+  font-size: 33px;
+  color: #b1ede3;
+  top: -22px;
+  right: 17%;
+}
+.circle .two {
+  font-size: 38px;
+  color: #87e4d4;
+  top: 22px;
+  left: 14%;
+}
+.circle .three {
+  font-size: 20px;
+  color: #a279ef;
+  top: 53px;
+  left: 42%;
+}
+.circle .four {
+  font-size: 25px;
+  color: #ed97a3;
+  top: 33%;
+  right: 17%;
+}
+.circle .five {
+  font-size: 25px;
+  color: #ef7673;
+  top: 40%;
+  left: 15%;
+}
+.circle .six {
+  font-size: 22px;
+  color: #a9b2d8;
+  top: 53%;
+  right: 27%;
+}
+.circle .seven {
+  font-size: 34px;
+  color: #eabf82;
+  bottom: 24%;
+  left: 7%;
+}
+.circle .eight {
+  font-size: 40px;
+  color: #f5c6cd;
+  bottom: 22%;
+  right: 17%;
 }

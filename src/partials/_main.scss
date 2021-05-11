@@ -1,0 +1,115 @@
+// MAIN
+
+// -Results
+.results {
+    background-image: url(../img/background-pattern-grid-line.png);
+    background-size: 310px;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    h3 {
+        padding-top: 161px;
+        width: 550px;
+        margin: auto;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    p {
+        font-weight: 700;
+        padding-top: 25px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    span {
+        font-size: 11px;
+        color: gray;
+    }
+
+    .number-results {
+        margin: 50px 0 ;
+        @include flexbox;
+
+        .result {
+            padding: 20px 0;
+            width: 25%;
+            color: $primary-brand-color;
+            font-size: 30px;
+            font-weight: 800;
+
+            span {
+                font-size: 12px;
+                font-weight: 600;
+                color: gray;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.circle {
+
+    span {
+        position: absolute
+    }
+
+    .one {
+        font-size: 33px;
+        color: lighten( #27ab94, 40%);
+        top: -22px;
+        right: 17%;
+    }
+
+    .two {
+        font-size: 38px;
+        color: lighten( #27ab94, 30%);
+        top: 22px;
+        left: 14%;
+    }
+
+    .three {
+        font-size: 20px;
+        color: lighten( #7335e7, 15%);
+        top: 53px;
+        left: 42%;
+    }
+
+    .four {
+        font-size: 25px;
+        color: lighten( #e25a6d, 14%);
+        top: 33%;
+        right: 17%;
+    }
+
+    .five {
+        font-size: 25px;
+        color: lighten( #cc1b17, 25%);
+        top: 40%;
+        left: 15%;
+    }
+
+    .six {
+        font-size: 22px;
+        color: lighten( #293259, 50%);
+        top: 53%;
+        right: 27%;
+    }
+
+    .seven {
+        font-size: 34px;
+        color: lighten( #e2a957, 10%);
+        bottom: 24%;
+        left: 7%;
+    }
+
+    .eight {
+        font-size: 40px;
+        color: lighten( #e25a6d, 25%);
+        bottom: 22%;
+        right: 17%;
+    }
+}
