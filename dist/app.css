@@ -14,19 +14,55 @@ img {
 }
 
 .wrapper {
-  width: 70%;
+  width: 62%;
   margin: auto;
-  height: 100px;
-  background-color: blue;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #27ab94;
+  color: #f6f3f6;
+  font-size: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus {
+  color: #f6f3f6;
+  background-color: #3f3a64;
+}
+
+header {
+  background-color: #1f2154;
+  color: #f6f3f6;
+  height: 550px;
 }
 
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0;
 }
 .nav-bar .logo {
-  width: 120px;
+  width: 110px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
 }
 
 .menu-link {
@@ -34,32 +70,108 @@ img {
 }
 .menu-link li {
   display: inline-block;
-  font-size: 12px;
+  font-size: 11px;
   margin-left: 25px;
   font-weight: 500;
 }
 .menu-link li i {
-  font-size: 10px;
+  font-size: 9px;
   padding-left: 5px;
 }
 .menu-link li a {
-  color: white;
+  color: #f6f3f6;
   text-decoration: none;
 }
 
-.search input {
+.shop-search i {
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+input {
   width: 120px;
   padding: 9px 15px;
   border: none;
   margin-right: -5px;
   border-radius: 3px 0 0 3px;
-  font-size: 12px;
+  font-size: 11px;
 }
-.search label {
-  padding-left: -3px;
-  padding: 6px;
+
+.shop-search label {
+  padding: 5px;
+  padding-top: 2px;
   padding-right: 15px;
-  background-color: white;
+  background-color: #f6f3f6;
   color: #27ab94;
   border-radius: 0 3px 3px 0;
+}
+.shop-search label i {
+  padding: 0;
+  color: #27ab94;
+}
+
+.cart {
+  position: relative;
+  text-align: center;
+}
+.cart span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 4px;
+  font-size: 6px;
+  border-radius: 50%;
+  background-color: #f6f3f6;
+  color: #1f2154;
+}
+
+.presentation {
+  text-align: center;
+  margin-top: 40px;
+  padding: 25px;
+}
+.presentation p {
+  font-size: 12px;
+  color: #bcbcbc;
+}
+.presentation button:hover {
+  background-color: #f6f3f6;
+  color: #27ab94;
+}
+
+.jumbotron {
+  height: 340px;
+  overflow-y: hidden;
+  position: relative;
+}
+.jumbotron .youtube {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  width: 550px;
+  padding: 15px;
+  background-color: #f6f3f6;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px lightgray;
+  position: relative;
+}
+.jumbotron .youtube span {
+  width: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jumbotron .left {
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 140px;
+}
+.jumbotron .right {
+  width: 150px;
+  position: absolute;
+  bottom: -110px;
+  right: 250px;
 }

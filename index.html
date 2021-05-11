@@ -39,41 +39,79 @@
                     <!-- end logo -->
 
                     <!-- nav-link -->
-                    <div>
+                    <div class="nav-link">
                        
                         <!-- menu-link -->
-                        <ul class="menu-link">
-                            <li v-for=" link in navLink">
-                                <a href="#">{{ link.name }}<i class="fas fa-chevron-down"></i></a>
-                            </li>
-                        </ul>
+                        <div>
+                            <ul class="menu-link">
+                                <li v-for=" link in navLink">
+                                    <a href="#">{{ link.name }}<i class="fas fa-chevron-down"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                         <!-- end menu-link -->
 
+                        <!-- shop & search -->
+                        <div class="shop-search">
+
+                            <span class="cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>0</span>
+                            </span>
+                                     
+                            <i class="far fa-user-circle"></i>
+
+                            <input id="search" type="text" placeholder="Search...">
+                            <label for="search"><i class="fas fa-search"></i></label>
+
+                        </div>
+                        <!-- end shop & search -->
+                        
                     </div>
                     <!-- end nav-link -->
-
-                    <!-- search -->
-                    <div class="search">
-
-                        <i class="fas fa-shopping-cart"></i>
-                        
-                        <i class="far fa-user-circle"></i>
-
-                        <input id="search" type="text" placeholder="Search...">
-                        <label for="search"><i class="fas fa-search"></i></label>
-
-                    </div>
-                    <!-- end search -->
 
                 </section>
                 <!-- End Nav-bar -->
 
+                <!-- Presentation page -->
+                <section class="presentation">
+                    
+                    <h2>Learn At Your Own Pace!</h2>
+
+                    <p>Get teamed up with people of the some will</p>
+
+                    <button>Get Started for free</button>
+
+                </section>
+                <!-- end presentation page -->
             </div>
+
+            <!-- Jumbotron -->
+            <section class="jumbotron">
+
+                <div class="left">
+                    <img src="img/home-6-hero-left-person.png" alt="left">
+                </div>
+
+                <div class="youtube">
+                    <img src="img/home-6-hero-poster-final.jpg" alt="poster">
+                    <span><img src="img/icon-youtube-play.png" alt="youtube"></span>
+                </div>
+
+                <div class="right">
+                    <img src="img/home-6-hero-right-person.png" alt="right">
+                </div>
+
+            </section>
+            <!-- End jumbotron -->
+
         </header>
         <!-- END HEADER -->
 
         <!-- MAIN -->
         <main>
+
+            
 
         </main>
         <!-- END MAIN -->

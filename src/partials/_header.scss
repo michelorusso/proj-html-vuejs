@@ -1,55 +1,160 @@
 // HEADER
+header {
+    background-color: $third-brand-color;
+    color: $second-brand-color;
+    height: 550px;
+}
 
 // Nav-bar
-// --logo
+// -logo
 .nav-bar {
     @include flexbox;
     justify-content: space-between;
+    padding: 10px 0;
 
     .logo {
-        width: 120px;
+        width: 110px;
     }
     
 }
 
+// -nav-link
+.nav-link {
+    @include flexbox;
+}
+
+// --menu-link
 .menu-link {
         list-style-type: none;
         
         li {
             display: inline-block;
-            font-size: 12px;
+            font-size: 11px;
             margin-left: 25px;
             font-weight: 500;
 
             i {
-                font-size: 10px;
+                font-size: 9px;
                 padding-left: 5px;
             }
 
             a {
-                color: white;
+                color: $second-brand-color;
                 text-decoration: none;
             }
         }
     }
 
-.search {
+//-- shop & search 
+.shop-search {
 
-    input {
-        width: 120px;
-        padding:9px 15px;
-        border: none;
-        margin-right: -5px;
-        border-radius: 3px 0 0 3px;
+    i {
         font-size: 12px;
+        padding: 0 5px;
     }
+}   
+
+input {
+    width: 120px;
+    padding:9px 15px;
+    border: none;
+    margin-right: -5px;
+    border-radius: 3px 0 0 3px;
+    font-size: 11px;
+}
+
+.shop-search {
 
     label {
-        padding-left: -3px;
-        padding: 6px;
-        padding-right: 15px;
-        background-color: white;
-        color:  $primary-brand-color;
-        border-radius: 0 3px 3px 0;
+    padding: 5px;
+    padding-top: 2px;
+    padding-right: 15px;
+    background-color: $second-brand-color;
+    color:  $primary-brand-color;
+    border-radius: 0 3px 3px 0;
+
+        i {
+            padding: 0;
+            
+            color: $primary-brand-color;
+        }
     }
 }
+
+// --- cart
+.cart {
+    position: relative;
+    text-align: center;
+
+    span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2px 4px;
+        font-size: 6px;
+        border-radius: 50%;
+        background-color: $second-brand-color;
+        color: $third-brand-color;
+    }
+}
+
+// Presentation page
+.presentation {
+    text-align: center;
+    margin-top: 40px;
+    padding: 25px;
+
+    p {
+        font-size: 12px;
+        color: $fourth-brand-color;
+    }
+
+    button:hover {
+        background-color: $second-brand-color;
+        color: $primary-brand-color;
+    }
+}
+
+// Jumbotron
+.jumbotron {
+    height: 340px;
+    overflow-y: hidden;
+    position: relative;
+
+    .youtube {
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        transform: translateX(-50%);
+        width: 550px;
+        padding: 15px;
+        background-color: $second-brand-color;
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px 0px lightgray;
+        position: relative;
+
+        span {
+            width: 75px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .left {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        left: 140px;
+    }
+
+    .right {
+        width: 150px;
+        position: absolute;
+        bottom: -110px;
+        right: 250px;
+    }
+
+}
+

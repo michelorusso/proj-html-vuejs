@@ -14,10 +14,33 @@ img {
 }
 
 .wrapper {
-    width: 70%;
+    width: 62%;
     margin: auto;
+}
 
-    // TEST 
-    height: 100px;
-    background-color: blue;
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+// Button {
+button {
+    padding: 12px 25px;
+    background-color: $primary-brand-color;
+    color: $second-brand-color;
+    font-size: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:focus {
+    color: $second-brand-color;
+    background-color: #3f3a64;
 }
