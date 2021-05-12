@@ -53,9 +53,15 @@ button:hover {
 }
 
 // Title-section {
+.title-section {
+    text-align: center;
+}
+
 h2 {
     line-height: 35px;
     padding: 15px 0;
+    color: #222222;
+    font-size: 32px;
 
     span {
         color: $primary-brand-color;

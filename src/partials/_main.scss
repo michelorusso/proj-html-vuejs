@@ -294,3 +294,86 @@
         }
     }
 }
+
+// -Sponsor
+.sponsor {
+    padding: 50px 0 25px 0;
+}
+
+// --Freelancer
+.freelancer {
+    padding-top: 40px;
+    @include flexbox;
+    align-items: flex-start;
+
+    // --img-freelancer
+    .img-freelancer {
+        width: 35%;
+        position: relative;
+
+        // ---photo
+        div {
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url(../img/testimonial-avata-02.jpg);
+            background-position: center;
+            background-size: cover;
+            z-index: 1;
+        }
+
+        span {
+            position: absolute;
+            top: 85px;
+            left: 117px;
+            z-index: -1;
+
+            img {
+                width: 100px;
+            } 
+        }
+
+        #decor {
+            top: -12px;
+            left: 85px;
+            color: #d1a98e;
+
+            i {
+                font-size: 60px
+            }
+        }
+
+    } 
+
+    .cit-freelancer {
+        width: 65%;
+
+        p {
+            font-size: 25px;
+        }
+
+        h6 {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: black;
+            padding-top: 25px;
+        }
+
+        span {
+            color: rgb(155, 155, 155);
+            font-size: 11px;
+        }
+    }
+}
+
+// --Sponsor-Logo
+.sponsor-logo {
+    @include flexbox;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    div {
+        padding: 30px;
+    }
+}

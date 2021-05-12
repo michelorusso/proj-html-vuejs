@@ -48,9 +48,15 @@ button:hover {
   background-color: #3f3a64;
 }
 
+.title-section {
+  text-align: center;
+}
+
 h2 {
   line-height: 35px;
   padding: 15px 0;
+  color: #222222;
+  font-size: 32px;
 }
 h2 span {
   color: #27ab94;
@@ -451,4 +457,72 @@ input {
 }
 .single-course .price span i {
   padding-right: 5px;
+}
+
+.sponsor {
+  padding: 50px 0 25px 0;
+}
+
+.freelancer {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+}
+.freelancer .img-freelancer {
+  width: 35%;
+  position: relative;
+}
+.freelancer .img-freelancer div {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(../img/testimonial-avata-02.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+.freelancer .img-freelancer span {
+  position: absolute;
+  top: 85px;
+  left: 117px;
+  z-index: -1;
+}
+.freelancer .img-freelancer span img {
+  width: 100px;
+}
+.freelancer .img-freelancer #decor {
+  top: -12px;
+  left: 85px;
+  color: #d1a98e;
+}
+.freelancer .img-freelancer #decor i {
+  font-size: 60px;
+}
+.freelancer .cit-freelancer {
+  width: 65%;
+}
+.freelancer .cit-freelancer p {
+  font-size: 25px;
+}
+.freelancer .cit-freelancer h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  padding-top: 25px;
+}
+.freelancer .cit-freelancer span {
+  color: #9b9b9b;
+  font-size: 11px;
+}
+
+.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.sponsor-logo div {
+  padding: 30px;
 }
