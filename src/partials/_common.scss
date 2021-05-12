@@ -53,12 +53,19 @@ button:hover {
 }
 
 // Title-section {
-    h2 {
-        line-height: 35px;
-        padding: 15px 0;
+h2 {
+    line-height: 35px;
+    padding: 15px 0;
 
-        span {
-            color: $primary-brand-color;
-            font-weight: 400;
-        }
+    span {
+        color: $primary-brand-color;
+        font-weight: 400;
     }
+}
+
+h6 {
+    color: grey;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

@@ -57,15 +57,23 @@ h2 span {
   font-weight: 400;
 }
 
+h6 {
+  color: grey;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 header {
   background-color: #1f2154;
   color: #f6f3f6;
   height: 550px;
-  margin-bottom: 89px;
+  margin-bottom: 108px;
   position: relative;
 }
 
 .style {
+  z-index: 0;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -363,11 +371,6 @@ input {
   margin-top: 22%;
   vertical-align: middle;
 }
-.more-service h6 {
-  color: grey;
-  font-size: 11px;
-  font-weight: 400;
-}
 .more-service li {
   color: grey;
   font-size: 10px;
@@ -376,4 +379,76 @@ input {
 .more-service li i {
   color: #27ab94;
   padding-right: 12px;
+}
+
+.courses {
+  background-color: #f5f7fa;
+  text-align: center;
+  padding: 70px 0 40px 0;
+}
+
+.course-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.single-course {
+  width: 48%;
+  display: flex;
+  text-align: left;
+  margin: 20px 0;
+}
+.single-course .pictures {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.single-course .pictures.a {
+  background-image: url(../img/course-02-480x298.jpg);
+}
+.single-course .pictures.b {
+  background-image: url(../img/stock-full-hd-03-480x298.jpg);
+}
+.single-course .pictures.c {
+  background-image: url(../img/stock-full-hd-04-480x298.jpg);
+}
+.single-course .pictures.d {
+  background-image: url(../img/stock-full-hd-06-480x298.jpg);
+}
+.single-course .pictures.e {
+  background-image: url(../img/course-featured-image-01-480x298.jpg);
+}
+.single-course .pictures.f {
+  background-image: url(../img/stock-full-hd-05-480x298.jpg);
+}
+.single-course .price {
+  width: calc( 100% - 130px );
+  padding-left: 20px;
+}
+.single-course .price h3 {
+  color: #27ab94;
+  padding-top: 10px;
+}
+.single-course .price h3 span {
+  font-size: 14px;
+  color: #27ab94;
+  font-weight: 700;
+}
+.single-course .price p {
+  color: #1f2154;
+  font-size: 14px;
+  font-weight: 600;
+}
+.single-course .price span {
+  font-size: 11px;
+  color: #bcbcbc;
+  font-weight: 500;
+  padding-right: 20px;
+}
+.single-course .price span i {
+  padding-right: 5px;
 }

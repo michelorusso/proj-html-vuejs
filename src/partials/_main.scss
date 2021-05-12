@@ -194,12 +194,6 @@
     margin-top: 22%;
     vertical-align:middle;
 
-    h6 {
-        color: grey;
-        font-size: 11px;
-        font-weight: 400;
-    }
-
     li {
         color: grey;
         font-size: 10px;
@@ -208,6 +202,95 @@
         i {
             color: $primary-brand-color;
             padding-right: 12px;
+        }
+    }
+}
+
+// -Courses
+.courses {
+    background-color: #f5f7fa;
+    text-align: center;
+    padding: 70px 0 40px 0;
+}
+
+// --course-content
+.course-content {
+    @include flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// ---single-course
+.single-course {
+    width: 48%;
+    display: flex;
+    text-align: left;
+    margin: 20px 0;
+
+    // ----picutures
+    .pictures {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .pictures.a {
+        background-image: url(../img/course-02-480x298.jpg);
+    }
+
+    .pictures.b {
+        background-image: url(../img/stock-full-hd-03-480x298.jpg);
+    }
+
+    .pictures.c {
+        background-image: url(../img/stock-full-hd-04-480x298.jpg);
+    }
+
+    .pictures.d {
+        background-image: url(../img/stock-full-hd-06-480x298.jpg);
+    }
+
+    .pictures.e {
+        background-image: url(../img/course-featured-image-01-480x298.jpg);
+    }
+
+    .pictures.f {
+        background-image: url(../img/stock-full-hd-05-480x298.jpg);
+    }
+
+    // ----price
+    .price {
+        width: calc( 100% - 130px );
+        padding-left: 20px;
+        
+        h3 {
+            color: $primary-brand-color;
+            padding-top: 10px;
+
+            span {
+                font-size: 14px;
+                color: $primary-brand-color;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            color: $third-brand-color;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 11px;
+            color: #bcbcbc;
+            font-weight: 500;
+            padding-right: 20px;
+
+            i {
+                padding-right: 5px;
+            }
         }
     }
 }

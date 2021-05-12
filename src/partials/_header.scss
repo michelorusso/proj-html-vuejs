@@ -3,11 +3,12 @@ header {
     background-color: $third-brand-color;
     color: $second-brand-color;
     height: 550px;
-    margin-bottom: 89px;
+    margin-bottom: 108px;
     position: relative;
 }
 
 .style {
+    z-index: 0;
     position: absolute;
     bottom: 0;
     left: 0;
