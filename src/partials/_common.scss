@@ -1,9 +1,11 @@
+// RESET
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// COMMON
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -23,6 +25,10 @@ h2 {
     font-size: 30px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 // Button {
 button {
     padding: 12px 25px;
@@ -31,16 +37,28 @@ button {
     font-size: 10px;
     font-weight: 600;
     border: none;
-    cursor: pointer;
     border-radius: 4px;
     margin: 20px 0;
 }
 
-.button:focus {
+
+button:focus {
     outline: none;
 }
 
-.button:focus {
+button:hover {
+    cursor: pointer;
     color: $second-brand-color;
     background-color: #3f3a64;
 }
+
+// Title-section {
+    h2 {
+        line-height: 35px;
+        padding: 15px 0;
+
+        span {
+            color: $primary-brand-color;
+            font-weight: 400;
+        }
+    }

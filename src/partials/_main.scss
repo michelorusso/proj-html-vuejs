@@ -29,6 +29,7 @@
         color: gray;
     }
 
+
     .number-results {
         margin: 50px 0 ;
         @include flexbox;
@@ -51,6 +52,7 @@
     }
 }
 
+// --circle
 .circle {
 
     span {
@@ -111,5 +113,101 @@
         color: lighten( #e25a6d, 25%);
         bottom: 22%;
         right: 17%;
+    }
+}
+
+// -Service
+.service {
+    background-image: url(../img/background-pattern-grid-line.png);
+    background-size: 310px;
+    background-position: center;
+    padding: 25px 0;
+}
+
+.container {
+    display: flex;
+}
+
+// --type-service
+.type-service {
+    width: 50%;
+    @include flexbox;
+    flex-wrap: wrap;
+
+    // --single-course {
+        .single-service {
+            width: 44%;
+            padding: 5px 15px 0 15px;
+            box-shadow: 0 0 10px 10px rgb(241, 238, 238);
+            margin: -3% 3%;
+            color: #293259;
+
+                h4 {
+                    font-size: 12px;
+                    padding: 10px 0;
+                }
+
+                p {
+                    font-size: 10px;
+                    padding-bottom: 15px;
+                }
+
+                img {
+                    margin: auto;
+                    width: auto;
+                    height: 130px;
+                }
+        }
+
+        .single-service:nth-child(2) {
+            margin-top: 80px;
+        }
+
+        .single-service:nth-child(3) {
+            margin-bottom: 80px;
+
+            padding: 0;
+
+            img {
+                margin: 0;
+            }
+
+            h4 {
+                margin: 0 15px;
+            }
+
+            p {
+                padding: 10px;
+            }
+        }
+
+        .single-service:last-child img {
+            width: 140px;
+        }    
+
+}
+
+// --more-servie
+.more-service {
+    width: 50%;
+    padding:  0 50px;
+    margin-top: 22%;
+    vertical-align:middle;
+
+    h6 {
+        color: grey;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    li {
+        color: grey;
+        font-size: 10px;
+        padding: 5px 0;
+
+        i {
+            color: $primary-brand-color;
+            padding-right: 12px;
+        }
     }
 }
