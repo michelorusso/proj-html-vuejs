@@ -141,6 +141,7 @@
             box-shadow: 0 0 10px 10px rgb(241, 238, 238);
             margin: -3% 3%;
             color: #293259;
+            background-color: white;
 
                 h4 {
                     font-size: 12px;
@@ -412,6 +413,27 @@
 
         i {
             padding-right: 5px;
+        }
+    }
+}
+
+// -Choice
+.choice {
+    padding: 60px 0;
+    background-image: linear-gradient(180deg, white, #fbfbfc);
+}
+
+.choice-content {
+    @include flexbox;
+    justify-content: space-between;
+
+    .single-choice {
+        width: 25%;
+        color: red;
+        background-color: red;
+
+        i {
+            color: red;
         }
     }
 }
