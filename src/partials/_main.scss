@@ -377,3 +377,41 @@
         padding: 30px;
     }
 }
+
+// -Events
+.events {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    
+}
+
+// --event-content
+.event-content {
+    @include flexbox;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+// ---single-event
+.single-event {
+    width: 32%;
+
+    img {
+        border-radius: 5px;
+    }
+
+    .info-event {
+        padding-top: 15px;
+    }
+
+    span {
+        font-size: 11px;
+        color: #bcbcbc;
+        font-weight: 500;
+        padding-right: 20px;
+
+        i {
+            padding-right: 5px;
+        }
+    }
+}

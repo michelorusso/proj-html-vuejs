@@ -55,7 +55,15 @@ button:hover {
 // Title-section {
 .title-section {
     text-align: center;
+
 }
+
+h6 {
+    color: grey;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    }
 
 h2 {
     line-height: 35px;
@@ -67,11 +75,6 @@ h2 {
         color: $primary-brand-color;
         font-weight: 400;
     }
+    
 }
 
-h6 {
-    color: grey;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-}

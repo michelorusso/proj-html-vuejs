@@ -82,7 +82,7 @@ input {
     padding: 5px;
     padding-top: 2px;
     padding-right: 15px;
-    background-color: $second-brand-color;
+    background-color: white;
     color:  $primary-brand-color;
     border-radius: 0 3px 3px 0;
 
@@ -116,6 +116,10 @@ input {
     text-align: center;
     margin-top: 40px;
     padding: 25px;
+    
+    h2 {
+        color: white;
+    }
 
     p {
         font-size: 12px;

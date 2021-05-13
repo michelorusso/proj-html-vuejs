@@ -52,6 +52,13 @@ button:hover {
   text-align: center;
 }
 
+h6 {
+  color: grey;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 h2 {
   line-height: 35px;
   padding: 15px 0;
@@ -61,13 +68,6 @@ h2 {
 h2 span {
   color: #27ab94;
   font-weight: 400;
-}
-
-h6 {
-  color: grey;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 
 header {
@@ -139,7 +139,7 @@ input {
   padding: 5px;
   padding-top: 2px;
   padding-right: 15px;
-  background-color: #f6f3f6;
+  background-color: white;
   color: #27ab94;
   border-radius: 0 3px 3px 0;
 }
@@ -167,6 +167,9 @@ input {
   text-align: center;
   margin-top: 40px;
   padding: 25px;
+}
+.presentation h2 {
+  color: white;
 }
 .presentation p {
   font-size: 12px;
@@ -525,4 +528,35 @@ input {
 }
 .sponsor-logo div {
   padding: 30px;
+}
+
+.events {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+.event-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.single-event {
+  width: 32%;
+}
+.single-event img {
+  border-radius: 5px;
+}
+.single-event .info-event {
+  padding-top: 15px;
+}
+.single-event span {
+  font-size: 11px;
+  color: #bcbcbc;
+  font-weight: 500;
+  padding-right: 20px;
+}
+.single-event span i {
+  padding-right: 5px;
 }
