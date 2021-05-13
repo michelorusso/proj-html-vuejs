@@ -27,7 +27,7 @@
     <div id="root">
 
         <!-- HEADER -->
-        <header>
+        <header id="start">
 
             <div class="wrapper">
 
@@ -725,9 +725,113 @@
 
         <!-- FOOTER -->
         <footer>
+            <div class="wrapper">
 
+                <div class="footer-content">
+
+                    <!-- adress -->
+                    <div class="andress">
+
+                        <h4>Adress</h4>
+
+                        <ul>
+
+                            <li v-for="adress in adress">
+                                {{ adress }}
+                            </li>
+
+                        </ul>
+
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+
+                    </div>
+                    <!-- end adress -->
+
+                    <!-- link-footer -->
+                    <div class="link-footer">
+
+                        <div>
+
+                            <h4>Explore</h4>
+
+                            <ul>
+
+                                <li v-for="explore in explore">
+                                    {{ explore }}
+                                </li>
+    
+                            </ul>
+                            
+                        </div>
+
+                        <div class="empty">
+
+                            <ul>
+
+                                <li v-for="empty in empty">
+                                    {{ empty }}
+                                </li>
+    
+                            </ul>
+
+                        </div>
+
+                        <div>
+
+                            <h4>Information</h4>
+
+                            <ul>
+
+                                <li v-for="info in information">
+                                    {{ info }}
+                                </li>
+    
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- end link-footer -->
+
+                </div>
+
+                <div id="copyright">
+
+                    <p><i class="far fa-copyright"></i> 2021 MaxCoach. All Rights Reserved</p>
+
+                </div>
+                
+                <div id="up">
+                    <a href="#start"><i class="fas fa-arrow-up"></i></a></i>
+                </div>
+            </div>
         </footer>
         <!-- END FOOTER -->
+
+        <!-- Fixed -->
+        <div class="fix">
+
+            <div>
+                <i class="far fa-caret-square-left"></i>
+            </div>
+
+            <div>
+                <i class="far fa-life-ring"></i>
+            </div>
+
+            <div>
+                <i class="fas fa-book"></i>
+            </div>
+
+            <div>
+                <i class="fas fa-cart-arrow-down"></i>
+            </div>
+            
+        </div>
+        <!-- End Fixed -->
 
     </div>
 

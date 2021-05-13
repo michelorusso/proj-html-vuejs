@@ -1,0 +1,80 @@
+// FOOTER
+footer {
+    background-color: #f8f8f8;
+    padding: 70px 0 50px 0;
+    position: relative;
+
+    h4 {
+        font-size: 13px;
+        padding-bottom: 7px;
+    }
+
+    li {
+        font-size: 10px;
+        color: gray;
+        padding: 7px 0;
+        cursor: pointer;
+    }
+
+    i {
+        margin-top: 10px;
+        font-size: 16px;
+        color: rgb(189, 189, 189);
+        padding-right: 12px;
+    }
+}
+
+.empty {
+    padding-top: 27px;
+}
+
+.footer-content {
+    @include flexbox;
+}
+
+.andress, 
+.link-footer {
+    width: 50%;
+}
+
+.link-footer {
+    @include flexbox;
+    justify-content: space-around;
+    align-items: initial;
+}
+
+// -copyright
+#copyright {
+    text-align: center;
+    
+    p {
+        font-size: 10px;
+        color: rgb(192, 190, 190);
+        padding-top: 30px;
+
+        i {
+            font-size: 10px;
+            color: rgb(192, 190, 190);
+        }
+    }
+} 
+
+#up {
+    position: absolute;
+    bottom: 50px;
+    right: 25px;
+
+    a {
+        background-color: $primary-brand-color;
+        border-radius: 50%;
+        padding: 20px 24px;
+    }
+    
+
+    i {
+        color: white;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
+}
