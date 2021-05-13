@@ -419,21 +419,123 @@
 
 // -Choice
 .choice {
-    padding: 60px 0;
-    background-image: linear-gradient(180deg, white, #fbfbfc);
+    padding-top: 60px;
+    background-image: linear-gradient(180deg, white, #eef0f3);
+    position: relative;
+
+    img {
+        padding: 0 25px
+    }
+
+    // --circle
+    .circle {
+
+        span {
+            position: absolute
+        }
+
+        .uno {
+            font-size: 39px;
+            color: #b1ede3;
+            bottom: 57%;
+            left: 23%;
+        }
+
+        .due {
+            font-size: 30px;
+            color: #b1ede3;
+            bottom: 55%;
+            right: 18%;
+        }
+
+        .tre {
+            font-size: 27px;
+            color: #f89f63;
+            bottom: 28%;
+            left: 7%;
+        }
+
+        .quattro {
+            font-size: 25px;
+            color: lighten( #e25a6d, 14%);
+            bottom: 22%;
+            right: 22%;
+        }
+
+        .cinque {
+            font-size: 24px;
+            color: lighten( #293259, 50%);
+            bottom: 11%;
+            right: 11%;
+        }
+
+        .sei {
+            font-size: 36px;
+            color: lighten( #e2a957, 10%);
+            bottom: 11%;
+            left: 8%;
+        }
+    }
 }
 
+// --choice-content
 .choice-content {
     @include flexbox;
     justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 10%;
 
+    // ---single-choice
     .single-choice {
         width: 25%;
-        color: red;
-        background-color: red;
+        padding: 0 10px;
 
         i {
-            color: red;
+            font-size: 50px;
+            padding-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 13px;
+            padding: 10px 0;
+        }
+
+        p {
+            font-size: 10px;
+            color: gray;
+        }
+    }
+}
+
+.img-service {
+    position: relative;
+    height: 316px;
+    
+    div {
+        position: absolute;
+        bottom: -21px;
+        left: 0;
+    }
+
+}
+
+
+
+.start-today {
+    background-color: white;
+    padding: 70px 0 50px 0;
+    text-align: center;
+
+    h3 {
+        font-size: 21px;
+    }
+
+    h4 {
+        font-weight: 600;
+
+        span {
+            color: $primary-brand-color;
+            font-weight: 400;
         }
     }
 }

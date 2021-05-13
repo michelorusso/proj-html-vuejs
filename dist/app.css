@@ -563,20 +563,99 @@ input {
 }
 
 .choice {
-  padding: 60px 0;
-  background-image: linear-gradient(180deg, white, #fbfbfc);
+  padding-top: 60px;
+  background-image: linear-gradient(180deg, white, #eef0f3);
+  position: relative;
+}
+.choice img {
+  padding: 0 25px;
+}
+.choice .circle span {
+  position: absolute;
+}
+.choice .circle .uno {
+  font-size: 39px;
+  color: #b1ede3;
+  bottom: 57%;
+  left: 23%;
+}
+.choice .circle .due {
+  font-size: 30px;
+  color: #b1ede3;
+  bottom: 55%;
+  right: 18%;
+}
+.choice .circle .tre {
+  font-size: 27px;
+  color: #f89f63;
+  bottom: 28%;
+  left: 7%;
+}
+.choice .circle .quattro {
+  font-size: 25px;
+  color: #ed97a3;
+  bottom: 22%;
+  right: 22%;
+}
+.choice .circle .cinque {
+  font-size: 24px;
+  color: #a9b2d8;
+  bottom: 11%;
+  right: 11%;
+}
+.choice .circle .sei {
+  font-size: 36px;
+  color: #eabf82;
+  bottom: 11%;
+  left: 8%;
 }
 
 .choice-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 10%;
 }
 .choice-content .single-choice {
   width: 25%;
-  color: red;
-  background-color: red;
+  padding: 0 10px;
 }
 .choice-content .single-choice i {
-  color: red;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.choice-content .single-choice h4 {
+  font-size: 13px;
+  padding: 10px 0;
+}
+.choice-content .single-choice p {
+  font-size: 10px;
+  color: gray;
+}
+
+.img-service {
+  position: relative;
+  height: 316px;
+}
+.img-service div {
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+}
+
+.start-today {
+  background-color: white;
+  padding: 70px 0 50px 0;
+  text-align: center;
+}
+.start-today h3 {
+  font-size: 21px;
+}
+.start-today h4 {
+  font-weight: 600;
+}
+.start-today h4 span {
+  color: #27ab94;
+  font-weight: 400;
 }
