@@ -2,6 +2,7 @@ var app = new Vue(
     {
     el: '#root',
     data: {  
+        active: false,
         navLink: [ 'Home', 'Pages', 'Courses', 'Features', 'Blog', 'shop'],
         adress: [
             '382 NE 191st ST # 87394 Miamim, FL 33179-3899',
@@ -26,7 +27,14 @@ var app = new Vue(
         ]
     }, 
     methods: {
-
+        openDropDown(index) {
+            
+            if( this.active === index) {
+				this.active = false;
+			} else {
+				this.active = index;
+			}
+        },
     },
     mounted() {
 

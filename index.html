@@ -46,9 +46,24 @@
                         <!-- menu-link -->
                         <div>
                             <ul class="menu-link">
-                                <li v-for=" link in navLink">
-                                    <a href="#">{{ link }}<i class="fas fa-chevron-down"></i></a>
+
+                                <li v-for=" ( link, index ) in navLink">
+                                    <a href="#">{{ link }}<i class="fas fa-chevron-down" @click="openDropDown(index)"></i></a>
+
+                                    <div v-if="index === active" class="dropdown">
+                                         <ul>
+                                            <li>
+                                                HomePage
+                                            </li> 
+
+                                            <li>
+                                                Social
+                                            </li> 
+                                         </ul>
+                                    </div>
+
                                 </li>
+
                             </ul>
                         </div>
                         <!-- end menu-link -->
