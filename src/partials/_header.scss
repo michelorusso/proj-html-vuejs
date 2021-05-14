@@ -74,6 +74,10 @@ input {
     font-size: 11px;
 }
 
+input:focus {
+    outline: none;
+}
+
 .shop-search {
 
     label {
