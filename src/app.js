@@ -3,7 +3,8 @@ var app = new Vue(
     el: '#root',
     data: {  
         active: false,
-        navLink: [ 'Home', 'Pages', 'Courses', 'Features', 'Blog', 'shop'],
+        navLink: [ 'Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop'],
+        dropDown: [ 'Homepage', 'Social', 'Section', 'Outline' ],
         adress: [
             '382 NE 191st ST # 87394 Miamim, FL 33179-3899',
             '+1 (305)547-9909(9am-5pm EST, Monday, Friday)',

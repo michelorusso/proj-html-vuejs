@@ -144,12 +144,20 @@ header {
   top: 25px;
   right: 0;
   box-shadow: 0 0 5px 5px #383b7e;
+  background-color: white;
+  color: #1f2154;
 }
 .dropdown li {
   font-size: 11px;
   font-weight: 500;
   text-transform: capitalize;
-  padding: 5px 0;
+  padding: 10px;
+  margin-left: 0;
+  display: block;
+}
+
+.click {
+  color: #27ab94;
 }
 
 .shop-search i {

@@ -47,17 +47,13 @@
                         <div>
                             <ul class="menu-link">
 
-                                <li v-for=" ( link, index ) in navLink">
-                                    <a href="#">{{ link }}<i class="fas fa-chevron-down" @click="openDropDown(index)"></i></a>
+                                <li v-for=" ( link, index ) in navLink" >
+                                    <a href="#">{{ link }}<i class="fas fa-chevron-down"  :class="{ 'click':  active === index }" @click="openDropDown(index)"></i></a>
 
                                     <div v-if="index === active" class="dropdown">
                                          <ul>
-                                            <li>
-                                                HomePage
-                                            </li> 
-
-                                            <li>
-                                                Social
+                                            <li v-for="linkdrop in dropDown">
+                                                {{ linkdrop }}
                                             </li> 
                                          </ul>
                                     </div>
@@ -268,7 +264,7 @@
 
                                 <img src="img/home-6-service-image-04.png" alt="service4">
 
-                                <h4>Business Administration</h4>
+                                <h4>Web Developer</h4>
 
                                 <p>Learn at start building a webpage from scratch. You decide your own pace, service ans speed.</p>
      
